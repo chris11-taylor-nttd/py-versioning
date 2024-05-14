@@ -10,7 +10,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["gitpython>=3.1", "semver>=3.0","setuptools_scm>=8.1"]
+dependencies = ["gitpython>=3.1", "semver>=3.0"]
 
 [project.urls]
 Homepage = "https://github.com/chris11-taylor-nttd/py-versioning"
@@ -19,7 +19,7 @@ Homepage = "https://github.com/chris11-taylor-nttd/py-versioning"
 package-dir = {chrisversiontest="src/versioning"}
 
 [project.optional-dependencies]
-dev = ["pytest~=7.0", "pytest-mock~=3.0", "responses~=0.24.0", "black>=23.11.0", "isort>=5.12.0", "faker>=24.14"]
+dev = ["pytest~=7.0", "pytest-mock~=3.0", "responses~=0.24.0", "black>=23.11.0", "isort>=5.12.0", "faker>=24.14", "setuptools_scm>=8.1"]
 
 [tool.isort]
 profile = "black"

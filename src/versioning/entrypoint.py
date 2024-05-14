@@ -4,7 +4,7 @@ try:
     print("Used __version__ to determine version")
 except ImportError:
     from setuptools_scm import get_version
-    VERSION = get_version(version_scheme="only-version", local_scheme="no-local-version")
+    VERSION = get_version(version_scheme="only-version", local_scheme="node-and-date")
     print("Used setuptools_scm to determine version")
 
 SEMANTIC_VERSION = Version.parse(VERSION)
