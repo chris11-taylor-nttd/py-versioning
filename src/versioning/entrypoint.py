@@ -1,7 +1,9 @@
 from semver import Version
-from setuptools_scm import get_version
-
-VERSION = get_version(version_scheme="only-version", local_scheme="no-local-version")
+try:
+    from __version__ import version as VERSION
+except ImportError:
+    from setuptools_scm import get_version
+    VERSION = get_version(version_scheme="only-version", local_scheme="no-local-version")
 
 SEMANTIC_VERSION = Version.parse(VERSION)
 
