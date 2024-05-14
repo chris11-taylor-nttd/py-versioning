@@ -1,3 +1,4 @@
 *.egg-info/
 .venv/
 __version__.py
+**/__pycache__/** */
